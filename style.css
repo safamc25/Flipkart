@@ -1,0 +1,272 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+nav{
+    background-color: #2874F0;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    margin-top: -80px;
+}
+.logo{
+    width: 80px;
+}
+.logo img{
+    width: 100%;
+}
+
+.search_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 500px;
+    min-width: 300px;
+    width: 450px;
+    height: 35px;
+    margin: 0px 10px;
+    background-color: white;
+    border-radius: 2px;
+    padding: 0px 16px;
+}
+
+.search_container i{
+    color: grey;
+    
+}
+.search_container input{
+    width: 100%;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    margin-left: 15px;
+}
+.loginbtn_container{
+    background-color: white;
+    padding: 7px 40px;
+    font-size: 16px;
+    font-weight: 550;
+
+    border-radius: 2px;
+    margin: 0px 10px;
+}
+
+.loginbtn_container a{
+    color: #2874F0;
+    font-weight: 550;
+    text-decoration: none;
+}
+
+.nav_link{
+    color: white;
+    padding: 0px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 550;
+
+}
+
+.more_link{
+    color: white;
+    font-weight: 550;
+    font-size: 16px;
+    padding: 0px 15px;
+    margin: 0px 10px;
+
+}
+
+.icon_more{
+    font-size: 10px;
+    transition: transform 0.5s;
+}
+
+.more_link:hover .icon_more{
+    transform: rotate(-180deg);
+}
+
+.card_link{
+    display: flex;
+    font-size: 16px;
+    font-weight: 550;
+    color: white;
+    margin: 0px 10px;
+
+}
+
+.card_link p{
+    padding: 0px 5px;
+}
+
+.nav_logo{
+    background-color:whitesmoke;
+    
+    /* margin: 0px 20px; */
+    height: 150px;
+    padding-top: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 80px;
+
+
+}
+
+.nav{
+    padding: 16px 16px 16px 200px;
+    width: 90px;
+    margin: 0px 1px 0px 12px;
+    margin-left:200px ;
+    
+}
+.nav img{
+    align-items: center;
+}
+.nav h4{
+    width: 110px;
+    align-items: center;
+    margin-left: 7px;
+}
+.mobile-logo{
+    margin-top: -118px;
+    margin-left: 700px;
+}
+.content_home{
+   background-color: whitesmoke;
+   height: 1120px;
+   margin-left: 20px;
+   margin-right: 20px;
+   margin-top: 20px;
+}
+.content_home h2{
+    padding-top: 20px;
+    margin-left: 20px;
+}
+.content{
+    width: 20%;
+    height: 480px;
+    background-color:white;
+    border: 1px solid;
+    padding: 15px;
+    float: left;
+    margin: 30px;
+    text-align: center;
+   
+}
+/* .content button{
+   margin-top: 10px; 
+   text-align: center;
+   background-color: yellow;
+   
+   padding: 5px 10px;
+    
+
+} */
+.content a{
+    text-decoration: none;
+    margin-top: 10px;
+    color: black;
+    font-weight: bold;
+}
+.content p{
+    margin-top: 10px;
+
+}
+.content i {
+    margin-top: 10px;
+    text-decoration:line-through ;
+}
+.price{
+    text-decoration: line-through;
+
+}
+.offer {
+    margin-left: 10px;
+    font-weight: bold;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+/* Style the footer sections */
+.footer-section {
+    /* width: 100px; */
+    padding-left: -60px;
+    text-align: left;
+}
+.footer-section h3{
+    color: grey;
+    margin-left: 20px;
+}
+
+/* Style the links in the footer */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-left: 18px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.footer-section p{
+    padding-top: 10px;
+    margin-left: 20px;
+
+}
+.footer-section .tel{
+    color: #2874F0;
+}
+
+
+
+
+
+
+
+
+/* responsive */
+
+@media(max-width:600px){
+    .logo{margin-left:200px; margin-top: -50px;}
+     nav{height: 140px;width:1000px;}
+     .nav_logo{margin-top: 80px; padding-top: 60px; height: 200px;}
+    .search_container{ margin-top: 20px; margin-left: -200px;  }
+    
+    .nav_link {display: none;}
+    .more_link{display: none;}
+    .card_link p{display: none;}
+    .loginbtn_container{margin-left: 300px;margin-top: -40px;}
+    .card_link i{margin-left: -200px; margin-top: -30px;}
+    .nav_logo{width: 950px;}
+    .nav{margin-left: 90px;}
+    .mobile-logo{margin-left: 500px;}
+    .content_home{width:950px ; height: 2200px;}
+    .content{width: 40%;}
+    footer{display: none;}
+    .footer-section{display: none;}
+
+}
